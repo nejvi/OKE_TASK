@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Countries xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Country>
+    <ID>1</ID>
+    <Name>Poland</Name>
+    <Capitol>Warsaw</Capitol>
+  </Country>
+  <Country>
+    <ID>2</ID>
+    <Name>England</Name>
+    <Capitol>London</Capitol>
+  </Country>
+  <Country>
+    <ID>3</ID>
+    <Name>Norway</Name>
+    <Capitol>Oslo</Capitol>
+  </Country>
+</Countries>

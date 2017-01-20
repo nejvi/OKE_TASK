@@ -1,0 +1,26 @@
+﻿@using Oke_task.Models
+@model Country
+
+@{
+    ViewBag.Title = "SpecificCountry";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+	<div>
+			<h2>@Html.Label(Model.Name)</h2>
+			<table class="table table-bordered">
+				<tr>
+					<th>Country Name</th>
+					<th>Country Capitol</th>
+				</tr>
+				<tr>
+					<td>
+						@Html.Label(Model.Name)
+					</td>
+					<td>
+						@Html.Label(Model.Capitol)
+					</td>
+				</tr>
+			</table>
+</div>

@@ -1,0 +1,32 @@
+﻿@using Oke_task.Models
+@model Country
+
+@{
+    ViewBag.Title = "Add Country";
+}
+
+<h2>Add Country</h2>
+<div>
+	@ViewBag.Message
+</div>
+@using (Html.BeginForm("Index", "Home")) {
+	@Html.AntiForgeryToken()
+	@Html.ValidationSummary(true)
+	<fieldset>
+		<legend>Country</legend>
+		<div class="editor-label">
+			@Html.LabelFor(model => model.Name)
+			<input type="text" name="name" />
+		</div>
+		<div class="editor-label">
+			@Html.LabelFor(model => model.Capitol)
+			<input type="text" name="capitol"/>
+		</div>
+
+		
+
+		<p>
+			<input type="submit" value="Add"/>
+		</p>
+	</fieldset>
+}
